@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Object</title>
+</head>
+<body>
+    <script>
+        function nameAndStreet(user){
+            const {name, address: {street}} = user;
+            return {name, street};
+        } 
+        
+        const person = {
+            name: "Mithun",
+            age: 21,
+            address: {
+                street: "BB, Block B, Industrial Area.",
+                city: "Scetor 62, Noida",
+                State: "Utter Pradesh",
+            },
+        };
+        const result = nameAndStreet(person);
+        console.log(result);
+    </script>
+</body>
+</html>

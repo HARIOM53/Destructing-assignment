@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Maximum and Minimum Value in an Array</title>
+</head>
+<body>
+    <script>
+        
+
+        function findMinMax(numbers){
+            const max = Math.max(...numbers);
+            const min = Math.min(...numbers);
+            return {max , min};
+        }
+
+        const inputArray = [5,7,9,8,2,6,1,3];
+        const result = findMinMax(inputArray);
+        console.log(result);
+    </script>
+</body>
+</html>

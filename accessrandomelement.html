@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function swapValues(x, y) {
+      [x, y] = [y, x];
+      return [x, y];
+    }
+
+    // Example 
+    let x = 5;
+    let y = 10;
+    const swappedValues = swapValues(x, y);
+
+    console.log(swappedValues);
+    console.log(x); 
+    console.log(y); 
+  </script>
+</body>
+</html>

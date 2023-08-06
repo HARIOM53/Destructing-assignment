@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countWords(str) {
+          const words = str.split(' ');
+          const wordCount = new Map();
+          
+          for (let word of words) {
+            if (wordCount.has(word)) {
+              wordCount.set(word, wordCount.get(word) + 1);
+            } else {
+              wordCount.set(word, 1);
+            }
+          }
+          
+          return wordCount;
+        }
+        
+        // Example
+        const text = "Lorem ipsum dolor sit amet consectetur adipiscing elit ipsum";
+        const result = countWords(text);
+        
+        for (let [word, count] of result) {
+          console.log(`${word}: ${count}`);
+        }
+      </script>
+</body>
+</html>
